@@ -1,0 +1,148 @@
+header {
+    display: block;
+    width:100%;
+    position: sticky;
+    top:0;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgb(182, 182, 182);
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color:rgb(141, 0, 0);
+    font-size: 8vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0em 0em 50px 10px rgba(182, 182, 182, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 4vh 0;
+    }
+}
+
+body {
+    background-image: url(../images/Flag_of_Palestine_backdrop-4.png);
+    background-size:cover;
+    margin: 0;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.445);
+    color: #000000;
+    padding: 3vw 6vw 1vw;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: right;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.445);
+    color: #000000;
+    padding: 0 6vw;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    display: inline-block;
+    margin: 1.5vw 0 0;
+    text-decoration: none;
+    color:#1565c0;
+}
+a:hover url, a:focus url{
+    text-decoration: underline;
+    color: #2a6496;
+}
+a url {
+    font-size: 3.5vh;
+}
+#dutch {
+    background-image: url(../images/Flag_of_the_Netherlands.png);
+    background-size: cover;
+    padding: 1.5vh 2.5vh;
+    display: inline-block;
+}
+#english {
+    background-image: url(../images//Flag_of_the_United_Kingdom.png);
+    background-size: cover;
+    padding: 1.5vh 2.5vh;
+    display: inline-block;
+}
+h1,h2,p,a {
+    margin: 0
+}
+h1 {
+    padding: 1vw 0 0.7vw;
+    font-size: 2em
+}
+h2 {
+    padding: 1vw 0 0.4vw;
+    font-size: 1.2em;
+}
+p {
+    padding: 0 0 1.4vw;
+}
+
+#signatures {
+    display: flexbox;
+}
+
+.signed-by {
+    border-radius: 1vw;
+    max-width: 26.5vw;
+    margin: 1vw;
+    overflow: hidden;
+    animation-name: boxoutoffocus;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.signed-by:hover {
+    animation-name: boxintofocus;
+    animation-duration: 1.5s;
+    animation-timing-function:ease;
+    animation-fill-mode: both;
+}
+
+.logo {
+    max-width: 22.5vw;
+    margin: 2vw;
+}
+
+.signed-by h3 {
+    visibility: hidden;
+    float: left;
+    margin: 0 2vw 2vw;
+    color: #000;
+    animation-name: textfadeout;
+    animation-duration: 0.75s;
+}
+
+.signed-by:hover h3 {
+    animation-name: textfadein;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes boxintofocus {
+    0%   {background-color: rgb(180, 180, 180, 0.5); max-height: 26.5vw;}
+    100% {background-color: rgb(180, 180, 180, 1); max-height: 40vw;}
+  }
+
+  @keyframes boxoutoffocus {
+    0%   {background-color: rgb(180, 180, 180, 1); max-height: 40vw;}
+    100% {background-color: rgb(180, 180, 180, 0.5); max-height: 26.5vw;}
+  }
+
+  @keyframes textfadein {
+    0%   {color: rgb(180, 180, 180, 0.5); visibility: hidden;}
+    100% {color: #000; visibility: visible;}
+  }
+
+  @keyframes textfadeout {
+    0%   {color: #000; visibility: visible;}
+    100% {color: rgb(180, 180, 180, 0.5); visibility: hidden;}
+}
