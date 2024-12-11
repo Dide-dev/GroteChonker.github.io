@@ -39,7 +39,7 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 750px) {
     header {
         padding: 4vh 0;
     }
@@ -74,20 +74,6 @@ a url {
     padding: 1.5vh 2.5vh;
     display: inline-block;
 }
-h1,h2,p,a {
-    margin: 0
-}
-h1 {
-    padding: 1vw 0 0.7vw;
-    font-size: 2em
-}
-h2 {
-    padding: 1vw 0 0.4vw;
-    font-size: 1.2em;
-}
-p {
-    padding: 0 0 1.4vw;
-}
 
 #signatures {
     display: flexbox;
@@ -114,6 +100,7 @@ p {
 .logo {
     max-width: 20.5vw;
     margin: 2vw;
+    border-radius: 1vw;
 }
 
 .signed-by h3 {
@@ -123,6 +110,7 @@ p {
     color: #000;
     animation-name: textfadeout;
     animation-duration: 0.75s;
+    animation-fill-mode: both;
 }
 
 .signed-by:hover h3 {
@@ -131,7 +119,7 @@ p {
     animation-fill-mode: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .signed-by {
         border-radius: 3.5vw;
         max-width: 88vw;
@@ -145,11 +133,61 @@ p {
     .logo {
         max-width: 80vw;
         margin: 4vw;
+        border-radius: 2.5vw;
     }
 
     .signed-by h3 {
         font-size: 1.25em;
         margin: 1vw 5vw 5vw;
+        visibility: visible;
+        animation: none;
+    }
+
+    .signed-by:hover h3 {
+        animation: none;
+    }
+}
+
+
+h1,h2,p,a {
+    margin: 0
+}
+h1 {
+    padding: 1vw 0 0.7vw;
+    font-size: 2em
+}
+h2 {
+    padding: 1vw 0 0.4vw;
+    font-size: 1.2em;
+}
+h3 {
+    font-size: 1.6vw;
+}
+p {
+    padding: 0 0 1.4vw;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1.1em
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 0.75em;
+    }
+    h2 {
+        font-size: 0.65em;
+    }
+    .signed-by h3 {
+        font-size: 0.65em;
+    }
+    p {
+        font-size: 0.6em;
     }
 }
 
@@ -164,13 +202,13 @@ p {
 }
 
 @keyframes full_boxintofocus {
-  0%   {background-color: rgb(200, 200, 200, 0.5); max-height: 88vw;}
-  100% {background-color: rgb(200, 200, 200, 1); max-height: 120vw;}
+  0%   {background-color: rgb(200, 200, 200, 0.5);}
+  100% {background-color: rgb(200, 200, 200, 1);}
 }
 
 @keyframes full_boxoutoffocus {
-  0%   {background-color: rgb(200, 200, 200, 1); max-height: 120vw;}
-  100% {background-color: rgb(200, 200, 200, 0.5); max-height: 88vw;}
+  0%   {background-color: rgb(200, 200, 200, 1);}
+  100% {background-color: rgb(200, 200, 200, 0.5);}
 }
 
 @keyframes textfadein {
