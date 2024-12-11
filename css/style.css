@@ -16,16 +16,6 @@ header {
     box-shadow: 0em 0em 50px 10px rgba(182, 182, 182, 0.5);
 }
 
-@media screen and (max-width: 1200px) {
-    header {
-        padding: 4vh 0;
-    }
-    main, nav {
-        padding-left: 6vw;
-        padding-right: 6vw;
-    }
-}
-
 body {
     background-image: url(../images/Flag_of_Palestine_backdrop-4.png);
     background-size:cover;
@@ -47,6 +37,16 @@ main {
     padding: 0 9vw 2vw;
     font-size: 1.4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 4vh 0;
+    }
+    main, nav {
+        padding-left: 4.5vw;
+        padding-right: 4.5vw;
+    }
 }
 
 a {
@@ -131,22 +131,54 @@ p {
     animation-fill-mode: both;
 }
 
+@media screen and (max-width: 600px) {
+    .signed-by {
+        border-radius: 3.5vw;
+        max-width: 88vw;
+        animation-name: full_boxoutoffocus;
+    }
+    
+    .signed-by:hover {
+        animation-name: full_boxintofocus;
+    }
+    
+    .logo {
+        max-width: 80vw;
+        margin: 4vw;
+    }
+
+    .signed-by h3 {
+        font-size: 2.75em;
+        margin: 1vw 5vw 5vw;
+    }
+}
+
 @keyframes boxintofocus {
-    0%   {background-color: rgb(200, 200, 200, 0.5); max-height: 24.5vw;}
-    100% {background-color: rgb(200, 200, 200, 1); max-height: 40vw;}
-  }
+  0%   {background-color: rgb(200, 200, 200, 0.5); max-height: 24.5vw;}
+  100% {background-color: rgb(200, 200, 200, 1); max-height: 40vw;}
+}
 
-  @keyframes boxoutoffocus {
-    0%   {background-color: rgb(200, 200, 200, 1); max-height: 40vw;}
-    100% {background-color: rgb(200, 200, 200, 0.5); max-height: 24.5vw;}
-  }
+@keyframes boxoutoffocus {
+  0%   {background-color: rgb(200, 200, 200, 1); max-height: 40vw;}
+  100% {background-color: rgb(200, 200, 200, 0.5); max-height: 24.5vw;}
+}
 
-  @keyframes textfadein {
-    0%   {color: rgb(200, 200, 200, 0.5); visibility: hidden;}
-    100% {color: #000; visibility: visible;}
-  }
+@keyframes full_boxintofocus {
+  0%   {background-color: rgb(200, 200, 200, 0.5); max-height: 88vw;}
+  100% {background-color: rgb(200, 200, 200, 1); max-height: 120vw;}
+}
 
-  @keyframes textfadeout {
-    0%   {color: #000; visibility: visible;}
-    100% {color: rgb(180, 180, 180, 0.5); visibility: hidden;}
+@keyframes full_boxoutoffocus {
+  0%   {background-color: rgb(200, 200, 200, 1); max-height: 120vw;}
+  100% {background-color: rgb(200, 200, 200, 0.5); max-height: 88vw;}
+}
+
+@keyframes textfadein {
+  0%   {color: rgb(200, 200, 200, 0.5); visibility: hidden;}
+  100% {color: #000; visibility: visible;}
+}
+
+@keyframes textfadeout {
+  0%   {color: #000; visibility: visible;}
+  100% {color: rgb(180, 180, 180, 0.5); visibility: hidden;}
 }
