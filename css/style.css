@@ -11,22 +11,12 @@ header {
     height: calc((100vw - 17px)/3);
     margin: 0;
     text-align: center;
-    color:rgb(141, 0, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     box-shadow: 0em 0em 500px 100px rgba(188, 0, 0, 1);
 }
 
 body {
     margin: 0;
-}
-
-nav {
-    background-color: rgba(255, 255, 255, 0.6);
-    color: #000000;
-    padding: 3vw 9vw 1vw;
-    font-size: 1.4em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: right;
 }
 
 main {
@@ -43,7 +33,7 @@ article {
 }
 
 @media screen and (max-width: 825px) {
-    main, nav {
+    article {
         padding-left: 4.5vw;
         padding-right: 4.5vw;
     }
