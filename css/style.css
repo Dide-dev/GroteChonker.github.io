@@ -33,6 +33,12 @@ article {
 }
 
 @media screen and (max-width: 825px) {
+    header {
+        background-image: url(../images/banner-mobile.png);
+        background-size: cover;
+        height: 100vw;
+    }
+
     article {
         padding-left: 4.5vw;
         padding-right: 4.5vw;
