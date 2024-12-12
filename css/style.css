@@ -1,24 +1,22 @@
 header {
     display: block;
-    width:100%;
-    position: sticky;
+    --position: sticky;
+    background-image: url(../images/banner.png);
+    background-size: cover;
     top:0;
     overflow: hidden;
     z-index: 2;
     background-color: rgb(182, 182, 182);
     background-position: center;
-    padding: 0;
+    height: calc((100vw - 17px)/3);
     margin: 0;
     text-align: center;
     color:rgb(141, 0, 0);
-    font-size: 8vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-shadow: 0em 0em 50px 10px rgba(182, 182, 182, 0.5);
+    box-shadow: 0em 0em 500px 100px rgba(188, 0, 0, 1);
 }
 
 body {
-    background-image: url(../images/Flag_of_Palestine_backdrop-4.png);
-    background-size:cover;
     margin: 0;
 }
 
@@ -32,23 +30,28 @@ nav {
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url(../images/Flag_of_Palestine_backdrop-4.png);
+    background-size:cover;
     color: #000000;
-    padding: 0 9vw 2vw;
     font-size: 1.4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+article {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0 9vw 2vw;
+}
+
 @media screen and (max-width: 825px) {
-    header {
-        padding: 4vh 0;
-    }
     main, nav {
         padding-left: 4.5vw;
         padding-right: 4.5vw;
     }
 }
 
+.nav-link {
+    padding: 3vw 0 1vw;
+}
 a {
     display: inline-block;
     margin: 1.5vw 0 0;
