@@ -103,7 +103,7 @@ a url {
 }
 
 .round {
-    border-radius: 10vw;
+    border-radius: 100vw;
 }
 
 .signed-by h3 {
@@ -137,6 +137,10 @@ a url {
         max-width: 80vw;
         margin: 4vw;
         border-radius: 2.5vw;
+    }
+
+    .round {
+        border-radius: 100vw;
     }
 
     .signed-by h3 {
