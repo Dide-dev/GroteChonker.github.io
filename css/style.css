@@ -102,6 +102,10 @@ a url {
     border-radius: 1vw;
 }
 
+.round {
+    border-radius: 10vw;
+}
+
 .signed-by h3 {
     visibility: hidden;
     float: left;
