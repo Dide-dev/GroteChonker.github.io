@@ -81,7 +81,9 @@ a url {
 }
 
 #signatures {
-    display: flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .signed-by {
@@ -180,11 +182,14 @@ p {
     padding: 0 0 1.4vw;
 }
 
-.arabic p, .arabic h1, .arabic h2, .arabic a{
+.arabic p, .arabic h1, .arabic h2, .arabic .nav-link{
     direction: rtl;
 }
-.arabic div {
+.arabic .nav-link {
     text-align: right;
+}
+#signatures.arabic {
+    flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 600px) {
