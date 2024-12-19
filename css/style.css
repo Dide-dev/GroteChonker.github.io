@@ -68,7 +68,13 @@ a url {
     display: inline-block;
 }
 #english {
-    background-image: url(../images//Flag_of_the_United_Kingdom.png);
+    background-image: url(../images/Flag_of_the_United_Kingdom.png);
+    background-size: cover;
+    padding: 1.5vh 2.5vh;
+    display: inline-block;
+}
+#arabic {
+    background-image: url(../images/Flag_of_Palestine.png);
     background-size: cover;
     padding: 1.5vh 2.5vh;
     display: inline-block;
@@ -106,7 +112,7 @@ a url {
     border-radius: 100vw;
 }
 
-.signed-by h3 {
+.signed-by strong {
     visibility: hidden;
     float: left;
     margin: 0 2vw 2vw;
@@ -116,7 +122,7 @@ a url {
     animation-fill-mode: both;
 }
 
-.signed-by:hover h3 {
+.signed-by:hover strong {
     animation-name: textfadein;
     animation-duration: 1.5s;
     animation-fill-mode: both;
@@ -143,20 +149,20 @@ a url {
         border-radius: 100vw;
     }
 
-    .signed-by h3 {
+    .signed-by strong {
         font-size: 1.25em;
         margin: 1vw 5vw 5vw;
         visibility: visible;
         animation: none;
     }
 
-    .signed-by:hover h3 {
+    .signed-by:hover strong {
         animation: none;
     }
 }
 
 
-h1,h2,p,a {
+h1,h2,p {
     margin: 0
 }
 h1 {
@@ -167,11 +173,18 @@ h2 {
     padding: 1vw 0 0.4vw;
     font-size: 1.2em;
 }
-h3 {
+strong {
     font-size: 1.6vw;
 }
 p {
     padding: 0 0 1.4vw;
+}
+
+.arabic p, .arabic h1, .arabic h2, .arabic a{
+    direction: rtl;
+}
+.arabic div {
+    text-align: right;
 }
 
 @media screen and (max-width: 600px) {
@@ -190,7 +203,7 @@ p {
     h2 {
         font-size: 0.65em;
     }
-    .signed-by h3 {
+    .signed-by strong {
         font-size: 0.65em;
     }
     p {
