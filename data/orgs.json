@@ -72,7 +72,7 @@
       "logo_shape": "rounded-square"
     },
     {
-      "name": "Memes voor de Massa\\'s",
+      "name": "Memes voor de Massa's",
       "ext_url": "https://massamemes.nl/",
       "logo_url": "memes_voor_de_massas-logo.png",
       "logo_shape": "rounded-square"
@@ -117,6 +117,12 @@
       "name": "Radical Organization of Students in Amsterdam",
       "ext_url": "https://www.instagram.com/rosaradicalstudents/",
       "logo_url": "rosa-logo.png",
+      "logo_shape": "rounded-square"
+    },
+    {
+      "name": "Hilversum for Palestine",
+      "ext_url": "https://www.instagram.com/hilversumforpalestine/",
+      "logo_url": "hilversum_4_palestine-logo.png",
       "logo_shape": "rounded-square"
     }
   ]
