@@ -72,7 +72,7 @@ Signatures.prototype.display = function() {
 }
 
 function showSignatures() {
-    fetch('../data/orgs.json')
+    fetch('data/orgs.json')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
