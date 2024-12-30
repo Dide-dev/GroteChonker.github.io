@@ -130,5 +130,11 @@
     "ext_url": "https://www.instagram.com/fryslanfoarpalestina/",
     "logo_url": "friesland_4_palestine-logo.png",
     "logo_shape": "rounded-square"
+  },
+  {
+    "name": "Wageningen Encampment",
+    "ext_url": "https://www.instagram.com/wageningenencampment/",
+    "logo_url": "wageningen_student_encampment.png",
+    "logo_shape": "round"
   }
 ]
