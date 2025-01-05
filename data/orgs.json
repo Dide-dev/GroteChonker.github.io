@@ -136,5 +136,11 @@
     "ext_url": "https://www.instagram.com/wageningenencampment/",
     "logo_url": "wageningen_student_encampment.png",
     "logo_shape": "round"
+  },
+  {
+    "name": "Revolutionaire Eenheid",
+    "ext_url": "https://www.revolutionaireeenheid.nl/",
+    "logo_url": "revolutionaire_eenheid-logo.png",
+    "logo_shape": "round"
   }
 ]
